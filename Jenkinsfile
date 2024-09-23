@@ -53,8 +53,8 @@ pipeline {
     
      failure {
          echo 'Failed!!!!!!!!!!'
-          mail to: 'rijudas002@gmail.com'
-          subject: "FAILED: ${env.JOB_NAME} - BUILD # ${env.BUILD_NUMBER}"
+          mail to: 'rijudas002@gmail.com',
+          subject: "FAILED: ${env.JOB_NAME} - BUILD # ${env.BUILD_NUMBER}",
           body: "URL - ${env.BUILD_URL}"
      }
 
